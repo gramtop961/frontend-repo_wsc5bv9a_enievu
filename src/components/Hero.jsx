@@ -1,0 +1,53 @@
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-slate-100" />
+        <div className="absolute -bottom-40 left-[-10%] h-[26rem] w-[26rem] rounded-full bg-slate-50" />
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-16">
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
+              Market entry to the Nordics for Czech B2B leaders
+            </h1>
+            <p className="mt-6 text-lg leading-relaxed text-slate-600 max-w-xl">
+              We help industrial companies from the Czech Republic expand into Sweden, Norway, Denmark and Finland with precise go-to-market, PR and marketing that resonates with Nordic decision-makers.
+            </p>
+
+            <div className="mt-8 flex items-center gap-3">
+              <a href="#contact" className="inline-flex items-center rounded-md bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800 transition-colors">
+                Schedule a consultation
+              </a>
+              <a href="#expertise" className="inline-flex items-center rounded-md border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 hover:bg-slate-50 transition-colors">
+                See how we work
+              </a>
+            </div>
+
+            <div className="mt-8 flex items-center gap-6 text-sm text-slate-600">
+              <div className="flex -space-x-2">
+                <img className="h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1560250056-07ba64664864?ixid=M3w3OTkxMTl8MHwxfHNlYXJjaHwxfHxjbGllbnR8ZW58MHwwfHx8MTc2MzM5Nzc0MXww&ixlib=rb-4.1.0&w=1600&auto=format&fit=crop&q=80" alt="client" />
+                <img className="h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="client" />
+                <img className="h-8 w-8 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&auto=format&fit=crop" alt="client" />
+              </div>
+              <p>Trusted by industrial innovators entering the Nordics</p>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="aspect-[4/3] rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+              <div className="h-full w-full rounded-lg bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center text-slate-600">
+                <div className="text-center">
+                  <p className="text-sm uppercase tracking-widest text-slate-500">Nordic GTM Framework</p>
+                  <h3 className="mt-2 text-2xl font-semibold">Focus. Validate. Expand.</h3>
+                  <p className="mt-3 max-w-sm mx-auto text-slate-600">Segmented ICPs, localized value propositions, partner-led motions and media relations crafted for Sweden, Norway, Denmark and Finland.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
