@@ -1,15 +1,21 @@
+import { ArrowRight, ShieldCheck } from 'lucide-react'
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10">
-        <div className="absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-slate-100" />
-        <div className="absolute -bottom-40 left-[-10%] h-[26rem] w-[26rem] rounded-full bg-slate-50" />
+        <div className="absolute -top-40 right-[-10%] h-[36rem] w-[36rem] rounded-full bg-gradient-to-br from-slate-100 to-slate-200 blur-2xl opacity-70" />
+        <div className="absolute -bottom-40 left-[-10%] h-[26rem] w-[26rem] rounded-full bg-gradient-to-br from-slate-50 to-white blur-xl" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-28 pb-16">
-        <div className="grid lg:grid-cols-2 gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
+            <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white/70 px-3 py-1 text-xs text-slate-600 backdrop-blur">
+              <ShieldCheck className="h-4 w-4" />
+              Trusted Nordic market entry for Czech B2B
+            </div>
+            <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
               Market entry to the Nordics for Czech B2B leaders
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-slate-600 max-w-xl">
@@ -19,6 +25,7 @@ export default function Hero() {
             <div className="mt-8 flex items-center gap-3">
               <a href="#contact" className="inline-flex items-center rounded-md bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800 transition-colors">
                 Schedule a consultation
+                <ArrowRight className="ml-2 h-4 w-4" />
               </a>
               <a href="#expertise" className="inline-flex items-center rounded-md border border-slate-300 px-5 py-3 text-sm font-medium text-slate-900 hover:bg-slate-50 transition-colors">
                 See how we work
@@ -36,14 +43,16 @@ export default function Hero() {
           </div>
 
           <div className="relative">
-            <div className="aspect-[4/3] rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-              <div className="h-full w-full rounded-lg bg-gradient-to-br from-slate-100 to-slate-200 flex items-center justify-center text-slate-600">
-                <div className="text-center">
-                  <p className="text-sm uppercase tracking-widest text-slate-500">Nordic GTM Framework</p>
+            <div className="relative aspect-[4/3] rounded-2xl border border-slate-200 bg-white p-5 shadow-sm overflow-hidden">
+              <div className="absolute inset-0 bg-[radial-gradient(60rem_60rem_at_-20%_-20%,rgba(15,23,42,0.06),transparent)]" />
+              <div className="relative h-full w-full rounded-xl bg-gradient-to-br from-slate-50 to-slate-200 flex items-center justify-center text-slate-700">
+                <div className="text-center px-4">
+                  <p className="text-xs uppercase tracking-widest text-slate-500">Nordic GTM Framework</p>
                   <h3 className="mt-2 text-2xl font-semibold">Focus. Validate. Expand.</h3>
                   <p className="mt-3 max-w-sm mx-auto text-slate-600">Segmented ICPs, localized value propositions, partner-led motions and media relations crafted for Sweden, Norway, Denmark and Finland.</p>
                 </div>
               </div>
+              <div className="pointer-events-none absolute -right-10 -bottom-10 h-52 w-52 rounded-full bg-gradient-to-tr from-slate-300/50 to-transparent blur-2xl" />
             </div>
           </div>
         </div>
